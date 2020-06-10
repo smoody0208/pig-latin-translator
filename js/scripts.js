@@ -3,7 +3,7 @@ $(document).ready(function(){
     event.preventDefault();
     
     const userInput = $("input#entry").val().toLowerCase();
-    const vowelsArray = ["a", "e", "i", "o", "u", "y"];
+    const vowelsArray = ["a", "e", "i", "o", "u"];
     const consonantsArray = ["b", "c", "d", "f", "g", "h", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"];
     let pigArr = [];
 
