@@ -2,7 +2,7 @@ $(document).ready(function(){
   $("form#input").submit(function(event){
     event.preventDefault();
     
-    const userInput = $("input#entry").val();
+    const userInput = $("input#entry").val().toLowerCase();
     const vowelsArray = ["a", "e", "i", "o", "u", "y"];
     const consonantsArray = ["b", "c", "d", "f", "g", "h", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"];
     let pigArr = [];
@@ -28,20 +28,19 @@ $(document).ready(function(){
         word = word.substr(3,word.length-1)
         pigArr.push(word);
       } else {
-        let newArray = userInput.split("");
-        let count = 0; 
-        for(let i = 0; i <= 3; ++i){
-          if(consonantsArray.includes(newArray[i]))
-          count++
-          word = newArray.join("");
-          word = word + word.substr(count,word.length-1) + "ay"
-          pigArr.push(word);
-          break;
-      }
-        // word = word + word[0] + "ay"
-        // word = word.substr(1, word.length-1)
-        // pigArr.push(word);
-        // console.log(pigArr);
+        // let newArray = userInput.split("");
+        // let count = 0; 
+        // for(let i = 0; i <= 3; ++i){
+        //   if(consonantsArray.includes(newArray[i]))
+        //   count++
+        //   word = newArray.join("");
+        //   word = word + word.substr(count,word.length-1) + "ay"
+        //   pigArr.push(word);
+        //   break;
+        word = word + word[0] + "ay"
+        word = word.substr(1, word.length-1)
+        pigArr.push(word);
+        console.log(pigArr);
       }
       
       $("#output").text(pigArr.join(" "));
