@@ -1,4 +1,4 @@
-# _Epicodus Track Suggester_
+# _Pig Latin Translator_
 
 #### _Pig Latin, 6.10.2020_
 
@@ -10,7 +10,7 @@ _This webpage was created to translate a sentence/word into Pig Latin._
 
 Description                                                                                               | Input    | Output   |
 | --------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| The program ignores non-alphabetical characters,since they cannot be vowels.                              | 4%       | 0        |
+| The program ignores non-alphabetical characters,since they cannot be vowels or consonants.                              | 4%       | 0        |
 | The program adds "way" to single-letter words beginning with a vowel                                      | "i"      | iway     |
 | The program adds "way" to all words beginning with a vowel.                                               | "away"   | awayway  |
 | For words beginning with one consonant, move the first consonant to the end, and "ay".                    | "latin"  | atinlay  |
@@ -49,5 +49,3 @@ _If you have any questions please feel free to contact Spencer. Make any changes
 MIT LICENSE
 
 Copyright (c) 2020 **_Spencer Moody, Kate Skorija, Matthew Craig_**
-
-| 
